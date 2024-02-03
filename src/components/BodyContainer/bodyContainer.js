@@ -5,18 +5,19 @@ import ResumeButton from './button/button'
 import Project from './project/project'
 import '../BodyContainer/project/project.css';
 import { useState } from 'react';
-
+import talent from './projects_imgs/talent.png';
 
 const BodyContainer = () => {
     const webDeveloper = ['Information Technology', 'Social Media Marketing', 'Web Design', 'Web DevelopmentSkills'];
     const englishTeacher = ['ESL', 'Educational Consulting', 'Communication'];
     const graphicDesigner = ['Graphic Design', 'UI UX Design', 'Content Creation', 'MarketResearch'];
 
+
     // Projects element
     const [projects, setProjects] = useState([
-        { title: 'Fashion shop landing page', clien: 'FashionHouse', description: 'An elegant web interface design using figma that shows the different models and latest fashion made by the shop', id: 1 },
-        { title: 'Chat app design', clien: 'MyChat App', description: 'An ongoing project - stands for a social media app with different functionalities and modern dark mode deesign', id: 2 },
-        { title: 'Web Design Concept for Photography Services', clien: 'Talent', description: 'The design is fully responsive, ensuring that it looks great on all devices, from desktop to mobile. This project was created using Figma and features a detailed design board and color palette, providing a comprehensive look at the design process.', id: 3 }
+        { title: 'Fashion shop landing page', clien: 'FashionHouse', description: 'An elegant web interface design using figma that shows the different models and latest fashion made by the shop', image: talent, id: 1 },
+        { title: 'Chat app design', clien: 'MyChat App', description: 'An ongoing project - stands for a social media app with different functionalities and modern dark mode deesign', image: talent, id: 2 },
+        { title: 'Web Design Concept for Photography Services', clien: 'Talent', description: 'The design is fully responsive, ensuring that it looks great on all devices, from desktop to mobile. This project was created using Figma and features a detailed design board and color palette, providing a comprehensive look at the design process.', image: talent, id: 3 }
     ]);
 
     return (
@@ -100,15 +101,10 @@ const BodyContainer = () => {
 
 
             <div className='projectContainer' id='Projects'>
-
-                <div className="ag-format-container">
-                    <div className="ag-courses_box">
-                        {/* Project card */}
-                        <Project projects={projects} />
-
-                    </div>
+                <div className="projects-container">
+                    {/* Project card */}
+                    <Project projects={projects} />
                 </div>
-
             </div>
 
 

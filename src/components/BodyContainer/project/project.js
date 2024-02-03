@@ -10,6 +10,8 @@ const Project = (props) => {
             
                 {projects.map((project) => (
                         <div className='project-card' key={projects.id}>
+                            <img src={project.image} alt={`${project.title} Image`} className="project-image" />
+                            <div className='project-text-side'> 
                             <h1 className="pproject-title">
                                 {project.title}
                             </h1>
@@ -19,6 +21,7 @@ const Project = (props) => {
                             <p className="project-description">
                                 {project.description}
                             </p>
+                            </div>
                         </div>
                    ) )}
                 
