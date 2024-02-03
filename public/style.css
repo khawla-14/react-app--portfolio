@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+}
+
+::selection {
+    color: #191919;
+    background: #57d9c6;
+}
+
+body {
+    background: #0f172a;
+    color: #e2e8f0;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-family: 'Poppins', sans-serif;
+}
+

@@ -1,0 +1,75 @@
+.cardsContainer {
+    margin: 100px 0;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.card {
+    margin: 20px 0;
+    padding: 20px 0;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: solid 1px #94a3b8;
+    transition: width 0.2s ease-in-out;
+
+}
+
+.card:hover {
+    border-bottom: solid 1px #57d9c6;
+}
+
+
+.card h1 {
+    color: #e2e8f0;
+    font-size: 26px;
+    font-weight: 500;
+    transition: SMOOTH .1S;
+}
+
+.card p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.card .postType {
+    font-weight: 500;
+    font-size: 18px;
+    margin: auto;
+}
+
+
+
+.card:hover h1 {
+    color: #57d9c6;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    margin-top: 20px;
+    row-gap: 10PX;
+}
+
+.tags span {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 12px;
+    color: #57d9c6;
+    background: #57d9c61f;
+    margin-right: 10px;
+    border-radius: 30px;
+    width: fit-content;
+}
+
+@media only screen and (max-width: 750PX) {
+    .card h1 {
+        font-size: 20PX;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+}

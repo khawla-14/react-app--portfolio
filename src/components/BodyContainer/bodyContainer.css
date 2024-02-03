@@ -1,0 +1,119 @@
+.body-container {
+    margin-top: 83px;
+    margin-left: 550px;
+
+}
+
+.about {
+    color: #94a3b8;
+    word-spacing: 1px;
+    white-space: break-spaces;
+}
+
+.about p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.about p span {
+    font-weight: 500;
+    color: #e2e8f0;
+}
+
+
+
+
+/*     Skills      */
+.skills-container h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.skills-container .langs ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.skills-container .langs ul li {
+    user-select: none;
+    width: 180px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background: #57d9c60b;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #57d9c6d3;
+    transition: ease-in .5s;
+}
+
+.skills-container .langs ul li:hover {
+    background: #57d9c61a;
+}
+
+.skills-container .langs ul li i {
+    align-self: center;
+    margin-right: 20px;
+}
+
+.skills-container .tools {
+    margin-top: 30px;
+}
+
+.skills-container .tools ul {
+    display: grid;
+    row-gap: 2px;
+    padding: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skills-container .tools ul li {
+    user-select: none;
+    cursor: cell;
+}
+
+.skills-container .tools ul li:hover {
+    color: #57d9c6fb;
+}
+
+
+
+@media only screen and (max-width: 1050px) {
+
+    .body-container {
+        display: block;
+        width: 80%;
+        margin: 50px;
+    }
+
+    .skills-container .langs ul {
+        display: grid;
+        row-gap: 15px;
+        column-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 750PX) {
+
+    .body-container {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .skills-container .langs ul {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 15px;
+    }
+
+
+}

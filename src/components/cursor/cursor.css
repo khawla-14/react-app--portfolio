@@ -1,0 +1,23 @@
+.custom-cursor {
+    position: fixed;
+    width: 400px;
+    /* Adjust the width of your custom cursor */
+    height: 400px;
+    /* Adjust the height of your custom cursor */
+    border: .1REM solid #ffffff00;
+    /* Set a visible border color */
+    border-radius: 50%;
+    /* Create a circular shape for the cursor */
+    mix-blend-mode: screen;
+    /* Use the 'screen' blend mode for blending with the background */
+    pointer-events: none;
+    /* Make sure the cursor doesn't interfere with other elements */
+    z-index: 9999;
+    /* Set a high z-index to ensure the cursor appears above other elements */
+    transform: translate(-50%, -50%);
+    /* Center the cursor on the mouse position */
+    background-color: rgba(255, 255, 255, 0);
+    /* Set a semi-transparent background color */
+    transition: all 0.15s ease-out;
+    /* Add a smooth transition effect */
+}
