@@ -4,13 +4,23 @@ import Card from './experienceCard/card'
 import ResumeButton from './button/button'
 import Project from './project/project'
 import '../BodyContainer/project/project.css';
-
-
+import { useState } from 'react';
+import talent from './projects_imgs/talent.png';
+import chat from './projects_imgs/Chat.png';
+import modest from './projects_imgs/modest.png';
 
 const BodyContainer = () => {
     const webDeveloper = ['Information Technology', 'Social Media Marketing', 'Web Design', 'Web DevelopmentSkills'];
     const englishTeacher = ['ESL', 'Educational Consulting', 'Communication'];
     const graphicDesigner = ['Graphic Design', 'UI UX Design', 'Content Creation', 'MarketResearch'];
+
+
+    // Projects element
+    const [projects, setProjects] = useState([
+        { title: 'Fashion shop landing page', clien: 'FashionHouse', description: 'An elegant web interface design using figma that shows the different models and latest fashion made by the shop', image: modest, id: 1 },
+        { title: 'Chat app design', clien: 'MyChat App', description: 'An ongoing project - stands for a social media app with different functionalities and modern dark mode deesign', image: chat, id: 2 },
+        { title: 'Web Design Concept for Photography Services', clien: 'Talent', description: 'The design is fully responsive, ensuring that it looks great on all devices, from desktop to mobile.', image: talent, id: 3 }
+    ]);
 
     return (
         <div className='body-container'>
@@ -87,21 +97,16 @@ const BodyContainer = () => {
 
                     tags={graphicDesigner}
                 />
-            <ResumeButton />
+                <ResumeButton />
 
             </div>
-            
+
 
             <div className='projectContainer' id='Projects'>
-                
-                <div className="ag-format-container">
-                    <div className="ag-courses_box">
-                        {/* Project card */}
-                        <Project />
-                        
-                    </div>
+                <div className="projects-container">
+                    {/* Project card */}
+                    <Project projects={projects} />
                 </div>
-
             </div>
 
 

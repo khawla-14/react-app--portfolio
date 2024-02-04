@@ -7,10 +7,12 @@
 .card {
     margin: 20px 0;
     padding: 20px 0;
-    width: 100%;
+    width: 90%;
     cursor: pointer;
     border-bottom: solid 1px #94a3b8;
     transition: width 0.2s ease-in-out;
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -19,22 +21,33 @@
 }
 
 
+.card .duration {
+    width: 40px;
+    display: block;
+    width: 50%;
+    color: #94a3b8;
+    font-size: 12px;
+    margin-right: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 .card h1 {
     color: #e2e8f0;
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 500;
     transition: SMOOTH .1S;
 }
 
 .card p {
     color: #94a3b8;
-    font-size: 14px;
+    font-size: 12px;
     margin: 8px 0;
 }
 
 .card .postType {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     margin: auto;
 }
 
@@ -65,11 +78,18 @@
 }
 
 @media only screen and (max-width: 750PX) {
+    .card{
+        flex-direction: column;
+
+    }
     .card h1 {
         font-size: 20PX;
     }
 
     .card p {
         font-size: 12px;
+    }
+    .card .duration{
+        margin-bottom: 10px;
     }
 }

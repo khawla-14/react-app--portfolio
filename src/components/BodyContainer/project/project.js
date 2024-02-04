@@ -2,24 +2,31 @@ import React from 'react'
 import './project.css';
 
 
-const Project = () => {
+const Project = (props) => {
+    const projects = props.projects;
   return (
 
-            <div className="ag-courses_item">
-            <a href="#" className="ag-courses-item_link">
-                <div className="ag-courses-item_bg"></div>
-
-                <div className="ag-courses-item_title">
-                    UI/Web&amp;Graph design for teenagers 11-17&#160;years old
-                </div>
-
-                <div className="ag-courses-item_date-box">
-                     Start:
-                <span className="ag-courses-item_date">
-                    04.11.2022
-                </span>
-                </div>
-            </a>
+            <div className="projects-card">
+            
+                {projects.map((project) => (
+                        <div className='project-card' key={projects.id}>
+                            <img src={project.image} alt={`${project.title} Image`} className="project-image" />
+                            <div className='project-text-side'> 
+                            <h1 className="pproject-title">
+                                {project.title}
+                            </h1>
+                            <h4 className="clien-name">
+                                {project.clien}
+                            </h4>
+                            <p className="project-description">
+                                {project.description}
+                            </p>
+                            </div>
+                        </div>
+                   ) )}
+                
+                
+            
             </div>
 
 
