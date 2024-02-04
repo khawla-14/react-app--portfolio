@@ -14,8 +14,8 @@ const Header = () => {
 
                 <div className='links'>
                     <Link activeClass='active' to='About' spy={true} smooth={true} offset={-100}  className='menu-item'>About</Link>
-                    <Link activeClass='active' to='Experiance' spy={true} smooth={true} offset={-100}  className='menu-item'>Experience</Link>
-                    <Link activeClass='active' to='Projects' spy={true} smooth={true} offset={-100} className='menu-item'>Projects</Link>
+                    <Link activeClass='active' to='Experiance' spy={true} smooth={true} offset={-60}  className='menu-item'>Experience</Link>
+                    <Link activeClass='active' to='Projects' spy={true} smooth={true} offset={-10} className='menu-item'>Projects</Link>
                     <Link activeClass='active' to='Contact' spy={true} smooth={true} offset={-100} className='menu-item'>Contact</Link>
                 </div>
             </div>

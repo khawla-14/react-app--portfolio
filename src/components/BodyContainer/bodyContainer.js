@@ -6,6 +6,8 @@ import Project from './project/project'
 import '../BodyContainer/project/project.css';
 import { useState } from 'react';
 import talent from './projects_imgs/talent.png';
+import chat from './projects_imgs/Chat.png';
+import modest from './projects_imgs/modest.png';
 
 const BodyContainer = () => {
     const webDeveloper = ['Information Technology', 'Social Media Marketing', 'Web Design', 'Web DevelopmentSkills'];
@@ -15,9 +17,9 @@ const BodyContainer = () => {
 
     // Projects element
     const [projects, setProjects] = useState([
-        { title: 'Fashion shop landing page', clien: 'FashionHouse', description: 'An elegant web interface design using figma that shows the different models and latest fashion made by the shop', image: talent, id: 1 },
-        { title: 'Chat app design', clien: 'MyChat App', description: 'An ongoing project - stands for a social media app with different functionalities and modern dark mode deesign', image: talent, id: 2 },
-        { title: 'Web Design Concept for Photography Services', clien: 'Talent', description: 'The design is fully responsive, ensuring that it looks great on all devices, from desktop to mobile. This project was created using Figma and features a detailed design board and color palette, providing a comprehensive look at the design process.', image: talent, id: 3 }
+        { title: 'Fashion shop landing page', clien: 'FashionHouse', description: 'An elegant web interface design using figma that shows the different models and latest fashion made by the shop', image: modest, id: 1 },
+        { title: 'Chat app design', clien: 'MyChat App', description: 'An ongoing project - stands for a social media app with different functionalities and modern dark mode deesign', image: chat, id: 2 },
+        { title: 'Web Design Concept for Photography Services', clien: 'Talent', description: 'The design is fully responsive, ensuring that it looks great on all devices, from desktop to mobile.', image: talent, id: 3 }
     ]);
 
     return (
