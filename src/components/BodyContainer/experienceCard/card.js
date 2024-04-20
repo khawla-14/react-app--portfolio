@@ -14,16 +14,18 @@ const Card = ({ duration, jobTitle, postType, jobDescription, tags, externalLink
 
         <a href={externalLink} target="_blank"  >
             <div className='card'>
-                <p className='duration'>{duration}</p>
-                <h1>{jobTitle}</h1>
-                <p className='postType'>{postType}</p>
-                <p>{jobDescription}</p>
+                <div className='duration'>{duration}</div>
+                <div className='card-content'>
+                    <h1>{jobTitle}</h1>
+                    <p className='postType'>{postType}</p>
+                    <p>{jobDescription}</p>
 
 
-                <div className='tags'>
-                    {tags.map((tags, index) => (
-                        <span key={index}>{tags}</span>
-                    ))}
+                    <div className='tags'>
+                        {tags.map((tags, index) => (
+                            <span key={index}>{tags}</span>
+                        ))}
+                    </div>
                 </div>
             </div>
         </a>
