@@ -13,17 +13,17 @@ const Header = () => {
                 </div>
 
                 <div className='links'>
-                    <Link activeClass='active' to='About' spy={true} smooth={true} offset={-100}  className='menu-item'>About</Link>
-                    <Link activeClass='active' to='Experiance' spy={true} smooth={true} offset={-60}  className='menu-item'>Experience</Link>
+                    <Link activeClass='active' to='About' spy={true} smooth={true} offset={-100} className='menu-item'>About</Link>
+                    <Link activeClass='active' to='Experiance' spy={true} smooth={true} offset={-60} className='menu-item'>Experience</Link>
                     <Link activeClass='active' to='Projects' spy={true} smooth={true} offset={-10} className='menu-item'>Projects</Link>
-                    <Link activeClass='active' to='Contact' spy={true} smooth={true} offset={-100} className='menu-item'>Contact</Link>
+                    <Link activeClass='active' to='zahikhawla20@gmail.com' onClick={(e) => { window.location.href = 'mailto:zahikhawla20@gmail.com'; }} spy={true} smooth={true} offset={-100} className='menu-item'>Contact</Link>
                 </div>
             </div>
             <div className='social-links'>
-                <a href="#"><i class="fa-brands fa-github    fa-xl"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin  fa-xl"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter   fa-xl"></i></a>
+                <a href="https://github.com/khawla-14/"><i class="fa-brands fa-github    fa-xl"></i></a>
+                <a href="https://www.instagram.com/khawla_info/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="https://www.linkedin.com/in/khawlazhi/"><i class="fa-brands fa-linkedin  fa-xl"></i></a>
+                <a href="https://twitter.com/khawla_zhi"><i class="fa-brands fa-twitter   fa-xl"></i></a>
             </div>
 
         </div>
